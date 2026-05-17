@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>T9 Browser</title>
+<title>GhostBrowser</title>
 
 <script src="/uv/uv.bundle.js"></script>
 <script src="/uv/uv.config.js"></script>
@@ -26,7 +26,8 @@ html, body {
 /* ===== TOP BAR ===== */
 .browser-ui {
     height: 96px;
-    background: #2b2b2b;
+    background: rgba(15,15,15,.85);
+backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #000000;
@@ -49,7 +50,7 @@ html, body {
     max-width: 220px;
     padding: 0 12px;
     border-radius: 8px 8px 0 0;
-    background: #212121;
+    background: rgba(255,255,255,.05);
     color: #ddd;
     display: flex;
     align-items: center;
@@ -58,7 +59,8 @@ html, body {
 }
 
 .tab.active {
-    background: #151515;
+    background: rgba(255,255,255,.09);
+box-shadow: 0 0 20px rgba(255,255,255,.08);
     color: white;
 }
 
@@ -115,7 +117,9 @@ html, body {
 .urlbar {
     flex: 1;
     height: 36px;
-    background: #161616;
+    background: rgba(255,255,255,.06);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(255,255,255,.08);
     border-radius: 18px;
     padding: 0 16px;
     display: flex;
@@ -185,7 +189,8 @@ html, body {
 </div>
 
 <div class="ntp" id="ntp">
-    <h1>Jonothans Hub</h1>
+    <h1>GhostBrowser</h1>
+<p style="opacity:.6;margin-top:10px;">Secure immersive browsing system</p>
 </div>
 
 <script>
